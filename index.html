@@ -13,15 +13,14 @@
   <body>
     <div id="app">
       <div id="inpt">
-        <input v-model="toDo">
-        <button @click="">Add</button>
+        <input v-model="text">
+        <button @click="addTo">Add</button>
 
       </div>
       <div id="list">
-        <div class="">
-          <p>{{toDo}}</p>
-          <i class="fas fa-times"></i>
-        </div>
+        <ul>
+          <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times"></i></li>
+        </ul>
 
       </div>
 
