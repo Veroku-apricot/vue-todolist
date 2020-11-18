@@ -19,7 +19,7 @@
       </div>
       <div id="list">
         <ul>
-          <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times"></i></li>
+          <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times" @click="remove(index)"></i></li>
         </ul>
 
       </div>

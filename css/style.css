@@ -2,10 +2,11 @@
   width: 50%;
 }
 
-#list > div {
+li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
+}
 
+li > i:hover, button:hover {
+  cursor: pointer;
 }
