@@ -27,7 +27,12 @@ h1 {
   color: #b47b31;
   font-family: 'Nanum Pen Script';
   font-size: 45px;
+}
 
+h2 {
+  color: #b47b31;
+  font-family: 'Nanum Pen Script';
+  font-size: 30px;
 }
 
 .container {
@@ -66,7 +71,7 @@ li {
   padding: 5px 10px 3px 8px;
   font-family: 'Nanum Pen Script';
   font-size: 25px;
-  
+
 }
 
 li > i {

@@ -25,6 +25,7 @@
           <img src="img/fork1.png" alt="">
         </div>
         <div id="list">
+          <h2>{{message}}</h2>
           <ul>
             <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times" @click="remove(index)"></i></li>
           </ul>
