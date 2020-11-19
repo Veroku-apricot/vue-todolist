@@ -10,9 +10,6 @@ body {
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 18px;
 }
 
@@ -31,9 +28,27 @@ h1 {
   color: #b47b31;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-height: calc(100vh - 168px);
+}
+
+#fork, #knife {
+text-align: center;
+}
+
+#fork {
+  padding-top: 10px;
+}
+
+img {
+  max-height: 100%;
+}
+
 #list {
   width: 50%;
-  min-height: 500px;
+  height: 500px;
   background-color: white;
   border-radius: 50px;
   padding: 30px;
@@ -45,8 +60,21 @@ li {
   justify-content: space-between;
   list-style: none;
   border-bottom: 1px solid #d3a15f;
-  padding: 5px 0 3px 0;
+  padding: 5px 10px 3px 8px;
   font-size: 18px;
+}
+
+li > i {
+  color: #b47b31;
+}
+
+li:hover {
+  background-color: #e4c49b;
+  color: white;
+}
+
+li > i:hover {
+  color: white;
 }
 
 li > i:hover, button:hover {

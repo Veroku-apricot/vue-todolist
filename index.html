@@ -17,10 +17,18 @@
         <input v-model="text">
         <button @click="addTo">Add</button>
       </div>
-      <div id="list">
-        <ul>
-          <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times" @click="remove(index)"></i></li>
-        </ul>
+      <div class="container">
+        <div id="fork">
+          <img src="img/fork1.png" alt="">
+        </div>
+        <div id="list">
+          <ul>
+            <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times" @click="remove(index)"></i></li>
+          </ul>
+        </div>
+        <div id="knife">
+          <img src="img/knife2.png" alt="">
+        </div>
 
       </div>
 
