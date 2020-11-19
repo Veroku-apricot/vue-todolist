@@ -8,7 +8,7 @@ var vm = new Vue ({
   methods: {
     // Add element to list
     addTo: function() {
-      this.toDos.push(this.text);
+      this.text===''?'':this.toDos.push(this.text);
       this.text = ''
     },
     // Remove element from list

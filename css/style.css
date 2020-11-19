@@ -24,8 +24,10 @@ body {
 }
 
 h1 {
-  padding-bottom: 13px;
   color: #b47b31;
+  font-family: 'Nanum Pen Script';
+  font-size: 45px;
+
 }
 
 .container {
@@ -52,6 +54,7 @@ img {
   background-color: white;
   border-radius: 50px;
   padding: 30px;
+  margin-top: 20px;
   border-bottom: 4px solid #d3a15f;
 }
 
@@ -61,7 +64,9 @@ li {
   list-style: none;
   border-bottom: 1px solid #d3a15f;
   padding: 5px 10px 3px 8px;
-  font-size: 18px;
+  font-family: 'Nanum Pen Script';
+  font-size: 25px;
+  
 }
 
 li > i {

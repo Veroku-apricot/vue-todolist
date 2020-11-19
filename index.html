@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <!-- Link font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <!-- Link css -->
@@ -14,7 +17,7 @@
     <div id="app">
       <div id="inpt">
         <h1>Your To-Do List!</h1>
-        <input v-model="text">
+        <input v-model="text" v-on:keyup.13="addTo">
         <button @click="addTo">Add</button>
       </div>
       <div class="container">
