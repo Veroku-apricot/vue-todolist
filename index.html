@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta property="og:image" content="img/to-do-list.png" />
     <!-- Link google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <div id="list">
           <h2>{{message}}</h2>
           <ul>
-            <li v-for='(toDo, index) in toDos'>{{toDos[index]}} <i class="fas fa-times" @click="remove(index)"></i></li>
+            <li v-for='(toDo, index) in toDos'><p>{{toDos[index]}} </p><i class="fas fa-times" @click="remove(index)"></i></li>
           </ul>
         </div>
         <div id="knife">
